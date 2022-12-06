@@ -2,7 +2,8 @@ name: Create and publish chatgpt-tgbot Docker image
 
 on:
   push:
-    branches: ['master']
+    tags:
+      - v*
 
 env:
   REGISTRY: ghcr.io
